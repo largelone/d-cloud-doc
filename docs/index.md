@@ -38,7 +38,7 @@ features:
     details: "创建领地以保护你的建筑和财产免受破坏"
   - icon:
       src: '/icons/calendar.svg'
-    title: "定期意见整机"
+    title: "定期意见征集"
     details: "玩家群体决定服务器更新方向，定期收集建议"
 ---
 
@@ -99,3 +99,50 @@ features:
 <a href="https://qm.qq.com/cgi-bin/qm/qr?k=TgsnceghZrh1XmTloJYUzFt1Ta2MkIpW&jump_from=webapi&authKey=aHF6XkBWFv7e0dUFTDQy4HSq5r7X7WC3EuQQIjCRRpytQbN2Kclozz80ydpxQZ23" class="cta-button" target="_blank">加入 QQ</a>
 
 </div>
+
+<style>
+.copy-feedback {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 100;
+}
+.copy-feedback.show {
+  opacity: 1;
+}
+</style>
+
+<script>
+document.addEventListener('click', async (e) => {
+  const target = e.target.closest('.copy-trigger');
+  if (!target) return;
+
+  const text = target.getAttribute('data-copy');
+  if (!text) return;
+
+  try {
+    await navigator.clipboard.writeText(text);
+    let feedback = document.querySelector('.copy-feedback');
+    if (!feedback) {
+      feedback = document.createElement('div');
+      feedback.className = 'copy-feedback';
+      document.body.appendChild(feedback);
+    }
+    feedback.textContent = '已复制到剪贴板';
+    feedback.classList.add('show');
+    setTimeout(() => feedback.classList.remove('show'), 1500);
+  } catch (err) {
+    console.error('复制失败:', err);
+  }
+});
+</script>
