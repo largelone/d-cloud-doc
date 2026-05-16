@@ -5,13 +5,21 @@
 ## 服务器地址
 
 ```
-play.d-cloud.mc
+dc.zhrhello.top
 ```
+
+<div class="copy-btn-wrapper">
+  <button class="copy-btn" data-copy="dc.zhrhello.top">复制主地址</button>
+</div>
 
 备用地址:
 ```
 mc.d-cloud.com
 ```
+
+<div class="copy-btn-wrapper">
+  <button class="copy-btn" data-copy="mc.d-cloud.com">复制备用地址</button>
+</div>
 
 ## 版本要求
 
@@ -35,7 +43,7 @@ mc.d-cloud.com
 
 点击 **添加服务器** 或 **直接连接**:
 
-1. 在 **服务器地址** 栏输入: `play.d-cloud.mc`
+1. 在 **服务器地址** 栏输入: <span class="copy-inline" data-copy="dc.zhrhello.top" title="点击复制">`dc.zhrhello.top`</span>
 2. 在 **服务器名称** 栏输入: `D-Cloud MC` (可自定义)
 3. 点击 **完成**
 
@@ -84,7 +92,7 @@ mc.d-cloud.com
 可以通过以下方式找回:
 
 1. 使用注册时绑定的邮箱
-2. 联系Discord管理员
+2. 联系QQ管理员
 3. 提供IP地址等验证信息
 
 ### Q: 服务器支持Java版还是基岩版?
@@ -97,6 +105,6 @@ mc.d-cloud.com
 
 ## 社区链接
 
-- Discord: [https://discord.gg/d-cloud](https://discord.gg/d-cloud)
+- QQ: [https://QQ.gg/d-cloud](https://QQ.gg/d-cloud)
 - QQ群: 123456789
 - B站: D-CloudMC

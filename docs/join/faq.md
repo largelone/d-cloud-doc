@@ -10,8 +10,8 @@
 
 1. 确认Minecraft版本在 1.20 - 1.20.4 之间
 2. 检查网络连接是否稳定
-3. 尝试备用地址 `mc.d-cloud.com`
-4. 查看Discord公告确认服务器状态
+3. 尝试备用地址 <span class="copy-inline" data-copy="mc.d-cloud.com" title="点击复制">`mc.d-cloud.com`</span>
+4. 查看QQ公告确认服务器状态
 5. 重启Minecraft和路由器
 
 ### Q: 连接时显示 "Outdated Client"?
@@ -38,7 +38,7 @@
 **A:** 
 
 1. 使用注册邮箱找回
-2. 在Discord联系管理员
+2. 在QQ联系管理员
 3. 提供登录IP和注册时间验证身份
 
 ### Q: 可以修改密码吗?
@@ -116,14 +116,14 @@
 **A:** 
 
 - 游戏内: `/report <玩家名> <原因>`
-- Discord: 在举报频道提交证据
+- QQ: 在举报频道提交证据
 - 邮件: support@d-cloud.mc
 
 ### Q: 被误封了怎么办?
 
 **A:** 
 
-1. 在Discord提交申诉
+1. 在QQ提交申诉
 2. 说明情况和理由
 3. 提供相关证据
 4. 等待管理员审核
@@ -153,6 +153,6 @@
 
 **A:** 
 
-- Discord: 最直接的方式
+- QQ: 最直接的方式
 - 游戏内: 留言或举报系统
 - 邮件: support@d-cloud.mc

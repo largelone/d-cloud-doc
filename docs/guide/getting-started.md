@@ -4,7 +4,7 @@
 
 ## 服务器信息
 
-- **服务器地址**: `play.d-cloud.mc`
+- **服务器地址**: <span class="copy-inline" data-copy="dc.zhrhello.top" title="点击复制">`dc.zhrhello.top`</span>
 - **支持版本**: 1.20.x - 1.20.4
 - **游戏模式**: 纯净生存
 - **最大在线**: 200人
@@ -13,7 +13,7 @@
 
 ### 1. 连接服务器
 
-在Minecraft主菜单中选择 **多人游戏** -> **添加服务器**,输入服务器地址 `play.d-cloud.mc` 后连接。
+在Minecraft主菜单中选择 **多人游戏** -> **添加服务器**,输入服务器地址 <span class="copy-inline" data-copy="dc.zhrhello.top" title="点击复制">`dc.zhrhello.top`</span> 后连接。
 
 ### 2. 注册账号
 
