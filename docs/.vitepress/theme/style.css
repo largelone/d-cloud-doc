@@ -624,6 +624,13 @@ code {
   margin-bottom: var(--space-md);
 }
 
+.cta-logo {
+  display: block;
+  margin: 0 auto var(--space-xl);
+  width: 80px;
+  height: 80px;
+}
+
 .cta-section p {
   color: var(--vp-c-text-2);
   margin-bottom: var(--space-xl);
