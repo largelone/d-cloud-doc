@@ -53,23 +53,61 @@ function initNavbarScroll() {
   handleScroll()
 }
 
-function forceDarkMode() {
+function applyThemeByPreference() {
   const html = document.documentElement
-  html.classList.add('dark')
-  html.classList.remove('light')
-  html.style.colorScheme = 'dark'
-  localStorage.setItem('vitepress-theme-appearance', 'dark')
+  const stored = localStorage.getItem('vitepress-theme-appearance')
+
+  if (stored === 'light') {
+    html.classList.add('light')
+    html.classList.remove('dark')
+    html.style.colorScheme = 'light'
+  } else if (stored === 'dark') {
+    html.classList.add('dark')
+    html.classList.remove('light')
+    html.style.colorScheme = 'dark'
+  } else {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+    if (prefersDark) {
+      html.classList.add('dark')
+      html.classList.remove('light')
+      html.style.colorScheme = 'dark'
+    } else {
+      html.classList.add('light')
+      html.classList.remove('dark')
+      html.style.colorScheme = 'light'
+    }
+  }
+}
+
+function initMediaQueryListener() {
+  const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+  mediaQuery.addEventListener('change', (e) => {
+    const stored = localStorage.getItem('vitepress-theme-appearance')
+    if (!stored || stored === 'auto') {
+      const html = document.documentElement
+      if (e.matches) {
+        html.classList.add('dark')
+        html.classList.remove('light')
+        html.style.colorScheme = 'dark'
+      } else {
+        html.classList.add('light')
+        html.classList.remove('dark')
+        html.style.colorScheme = 'light'
+      }
+    }
+  })
 }
 
 export default {
   extends: DefaultTheme,
   enhanceApp({ app, router, siteData }) {
     if (typeof window !== 'undefined') {
-      forceDarkMode()
+      applyThemeByPreference()
+      initMediaQueryListener()
 
       router.onAfterRouteChanged = () => {
         setTimeout(() => {
-          forceDarkMode()
+          applyThemeByPreference()
           initStaggerAnimation()
           initScrollAnimation()
           initNavbarScroll()
@@ -78,13 +116,13 @@ export default {
 
       if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', () => {
-          forceDarkMode()
+          applyThemeByPreference()
           initStaggerAnimation()
           initScrollAnimation()
           initNavbarScroll()
         })
       } else {
-        forceDarkMode()
+        applyThemeByPreference()
         initStaggerAnimation()
         initScrollAnimation()
         initNavbarScroll()
