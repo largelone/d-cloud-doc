@@ -5,6 +5,10 @@
 ## 服务器信息
 
 - **服务器地址**: <span class="copy-inline" data-copy="dc.zhrhello.top" title="点击复制">`dc.zhrhello.top`</span>
+- **备用地址**:
+  - <span class="copy-inline" data-copy="wh.frp.one:8852" title="点击复制">`wh.frp.one:8852`</span>
+  - <span class="copy-inline" data-copy="cn.gz.alichenserver.hayfrp.qzz.io:12308" title="点击复制">`cn.gz.alichenserver.hayfrp.qzz.io:12308`</span>
+  - <span class="copy-inline" data-copy="8790f7fff6d1.ofalias.com:24663" title="点击复制">`8790f7fff6d1.ofalias.com:24663`</span>
 - **服务器主版本**: 1.21.8
 - **支持版本**: 1.8 - 最新版本
 - **推荐版本**: 1.21.8
@@ -16,6 +20,8 @@
 ### 1. 连接服务器
 
 在Minecraft主菜单中选择 **多人游戏** -> **添加服务器**,输入服务器地址 <span class="copy-inline" data-copy="dc.zhrhello.top" title="点击复制">`dc.zhrhello.top`</span> 后连接。
+
+如果主地址无法连接，可以尝试使用备用地址。
 
 ### 2. 注册账号
 
@@ -56,6 +62,34 @@
 ![切换生存区服NPC](/npcs/scmenu.png)
 
 ![换服菜单](/menus/scmenu.png)
+
+## 网络要求
+
+- 稳定的网络连接
+- 延迟建议低于 100ms
+- 无代理或VPN(可能被反作弊系统误判)
+
+## 常见问题
+
+### Q: 无法连接服务器怎么办?
+
+- 检查网络连接
+- 确认Minecraft版本正确
+- 尝试备用地址
+- 加入QQ群查看服务器是否在维护
+
+### Q: 忘记密码怎么办?
+
+联系QQ管理员，提供IP地址等验证信息进行找回。
+
+### Q: 服务器支持Java版还是基岩版?
+
+目前仅支持Java版，暂不支持基岩版。
+
+### Q: 需要正版账号吗?
+
+服务器不需要正版Minecraft账号。
+
 ## 下一步
 
 - 查看 [服务器规则](/rules/main-rules) 避免违规

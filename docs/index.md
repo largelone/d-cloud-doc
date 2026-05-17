@@ -9,9 +9,6 @@ hero:
       text: 快速开始
       link: /guide/getting-started
     - theme: alt
-      text: 加入服务器
-      link: /join/how-to-join
-    - theme: alt
       text: 服务器规则
       link: /rules/main-rules
 
