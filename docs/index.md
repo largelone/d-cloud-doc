@@ -14,32 +14,6 @@ hero:
     - theme: alt
       text: 服务器规则
       link: /rules/main-rules
-
-features:
-  - icon:
-      src: '/icons/globe.svg'
-    title: "纯净生存"
-    details: "保持原版游戏体验，无破坏性修改"
-  - icon:
-      src: '/icons/users.svg'
-    title: "友好社区"
-    details: "友好的玩家群体，友善交流、和谐互动"
-  - icon:
-      src: '/icons/shield.svg'
-    title: "反作弊"
-    details: "秉持着无为而治但又人工高强度巡查（？"
-  - icon:
-      src: '/icons/coin.svg'
-    title: "经济系统"
-    details: "平衡的玩家经济系统，自由交易，成为黑心资本家"
-  - icon:
-      src: '/icons/home.svg'
-    title: "领地保护"
-    details: "创建领地以保护你的建筑和财产免受破坏"
-  - icon:
-      src: '/icons/calendar.svg'
-    title: "定期意见征集"
-    details: "玩家群体决定服务器更新方向，定期收集建议"
 ---
 
 <div class="home-section">
