@@ -43,6 +43,7 @@ export default defineConfig({
             { text: '每日收购', link: '/server/daily-buy' },
             { text: '回收站系统', link: '/server/recycle-bin' },
             { text: '领地保护', link: '/server/res' },
+            { text: '动作插件', link: '/server/gsit' },
           ],
         },
       ],
