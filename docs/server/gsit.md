@@ -34,7 +34,7 @@
 
 ### 旋转动作
 
-输入命令 `/spin` 开始旋转，cosplay 钻头效果。
+输入命令 `/spin` cos钻头开始旋转
 
 ![旋转动作](/guide/gsit/spin.png)
 
