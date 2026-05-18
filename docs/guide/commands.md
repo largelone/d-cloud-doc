@@ -17,7 +17,7 @@
 | `/money` 或 `/balance` | 查看余额 | `/money` |
 | `/money pay <玩家> <金额>` | 转账给其他玩家 | `/money pay Steve 100` |
 | `/baltop` | 财富排行榜 | `/baltop` |
-| `/money shop` | 查看系统商店 | `/money shop` |
+| `/market` | 打开本区市场 | `/market` |
 
 ## 传送相关
 
@@ -29,8 +29,8 @@
 | `/homes` | 查看家列表 | `/homes` |
 | `/homes rm <名称>` | 删除家 | `/homes rm base` |
 | `/tpa <玩家>` | 请求传送 | `/tpa Steve` |
-| `/tpaccept` | 接受传送 | `/tpaccept` |
-| `/tpdeny` | 拒绝传送 | `/tpdeny` |
+| `/tpyes` | 接受传送 | `/tpyes` |
+| `/tpno` | 拒绝传送 | `/tpno` |
 | `/back` | 返回上次位置 | `/back` |
 
 ## 社交相关
