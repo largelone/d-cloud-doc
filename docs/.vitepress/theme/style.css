@@ -982,33 +982,102 @@ code {
   border: 1px solid var(--vp-c-border);
   padding: var(--space-lg);
   margin: var(--space-lg) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-block::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
 }
 
 .custom-block.info {
-  background: rgba(79, 195, 247, 0.05);
-  border-color: rgba(79, 195, 247, 0.2);
+  background: rgba(79, 195, 247, 0.08);
+  border-color: rgba(79, 195, 247, 0.3);
+}
+
+.custom-block.info::before {
+  background-color: var(--sky-blue);
 }
 
 .custom-block.info .custom-block-title {
   color: var(--sky-blue);
+  font-weight: 600;
 }
 
 .custom-block.warning {
-  background: rgba(244, 143, 177, 0.05);
-  border-color: rgba(244, 143, 177, 0.2);
+  background: rgba(244, 143, 177, 0.08);
+  border-color: rgba(244, 143, 177, 0.3);
+  box-shadow: 0 2px 8px rgba(244, 143, 177, 0.15);
+}
+
+.custom-block.warning::before {
+  background-color: var(--pink);
 }
 
 .custom-block.warning .custom-block-title {
   color: var(--pink);
+  font-weight: 600;
 }
 
 .custom-block.danger {
-  background: rgba(239, 83, 80, 0.05);
-  border-color: rgba(239, 83, 80, 0.2);
+  background: rgba(239, 83, 80, 0.08);
+  border-color: rgba(239, 83, 80, 0.3);
+  box-shadow: 0 2px 8px rgba(239, 83, 80, 0.15);
+}
+
+.custom-block.danger::before {
+  background-color: var(--vp-c-danger);
 }
 
 .custom-block.danger .custom-block-title {
   color: var(--vp-c-danger);
+  font-weight: 600;
+}
+
+/* 自定义警告高亮类 */
+.highlight-warning {
+  background: linear-gradient(135deg, rgba(244, 143, 177, 0.1) 0%, rgba(244, 143, 177, 0.05) 100%);
+  border: 2px solid var(--pink);
+  border-left: 4px solid var(--pink);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  margin: var(--space-lg) 0;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(244, 143, 177, 0.2);
+}
+
+.highlight-warning::before {
+  content: '⚠';
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background: var(--vp-c-bg);
+  padding: 0 8px;
+  font-size: 1.25rem;
+  color: var(--pink);
+}
+
+.highlight-warning strong {
+  color: var(--pink-dark);
+  font-weight: 700;
+}
+
+/* 深色模式下的警告高亮 */
+html.dark .highlight-warning {
+  background: linear-gradient(135deg, rgba(244, 143, 177, 0.15) 0%, rgba(244, 143, 177, 0.08) 100%);
+  box-shadow: 0 4px 12px rgba(244, 143, 177, 0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) .highlight-warning {
+    background: linear-gradient(135deg, rgba(244, 143, 177, 0.15) 0%, rgba(244, 143, 177, 0.08) 100%);
+    box-shadow: 0 4px 12px rgba(244, 143, 177, 0.3);
+  }
 }
 
 /* 显示 VitePress 主题切换按钮 */

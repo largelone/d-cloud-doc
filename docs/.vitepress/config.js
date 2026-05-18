@@ -30,6 +30,7 @@ export default defineConfig({
             { text: '快速开始', link: '/guide/getting-started' },
             { text: '基础命令', link: '/guide/commands' },
             { text: '经济系统', link: '/guide/economy' },
+            { text: '术语表', link: '/guide/glossary' },
           ],
         },
       ],

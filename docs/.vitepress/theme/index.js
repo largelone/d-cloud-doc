@@ -1,4 +1,6 @@
 import DefaultTheme from 'vitepress/theme'
+import Breadcrumbs from './components/Breadcrumbs.vue'
+import Layout from './Layout.vue'
 import './style.css'
 
 function initStaggerAnimation() {
@@ -99,8 +101,12 @@ function initMediaQueryListener() {
 }
 
 export default {
-  extends: DefaultTheme,
+  ...DefaultTheme,
+  Layout,
   enhanceApp({ app, router, siteData }) {
+    // 注册全局组件
+    app.component('Breadcrumbs', Breadcrumbs)
+    
     if (typeof window !== 'undefined') {
       applyThemeByPreference()
       initMediaQueryListener()
