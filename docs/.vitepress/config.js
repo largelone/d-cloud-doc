@@ -18,6 +18,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '新手指南', link: '/guide/getting-started' },
+      { text: '服务器介绍', link: '/server/basic' },
       { text: '服务器规则', link: '/rules/main-rules' },
     ],
 
@@ -27,9 +28,19 @@ export default defineConfig({
           text: '新手指南',
           items: [
             { text: '快速开始', link: '/guide/getting-started' },
-            { text: '服务器特色', link: '/guide/features' },
             { text: '基础命令', link: '/guide/commands' },
             { text: '经济系统', link: '/guide/economy' },
+          ],
+        },
+      ],
+      '/server/': [
+        {
+          text: '服务器介绍',
+          items: [
+            { text: '基本信息', link: '/server/basic' },
+            { text: '签到系统', link: '/server/signin' },
+            { text: '每日收购', link: '/server/daily-buy' },
+            { text: '回收站系统', link: '/server/recycle-bin' },
           ],
         },
       ],
