@@ -18,7 +18,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '新手指南', link: '/guide/getting-started' },
-      { text: '服务器介绍', link: '/server/basic' },
+      { text: '服务器教程', link: '/server/basic' },
       { text: '服务器规则', link: '/rules/main-rules' },
     ],
 
@@ -36,7 +36,7 @@ export default defineConfig({
       ],
       '/server/': [
         {
-          text: '服务器介绍',
+          text: '服务器教程',
           items: [
             { text: '基本信息', link: '/server/basic' },
             { text: '签到系统', link: '/server/signin' },

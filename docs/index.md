@@ -9,6 +9,9 @@ hero:
       text: 快速开始
       link: /guide/getting-started
     - theme: alt
+      text: 服务器教程
+      link: /server/basic
+    - theme: alt
       text: 服务器规则
       link: /rules/main-rules
 
@@ -59,27 +62,6 @@ features:
   <div class="info-card">
     <div class="info-label">最大在线</div>
     <div class="info-value">50 人</div>
-  </div>
-</div>
-
-</div>
-
-<div class="home-section">
-
-## 为什么选择 D-Cloud
-
-<div class="why-grid">
-  <div class="why-item">
-    <h3>长期稳定</h3>
-    <p>生存区地图永不重置，你的所有建筑和进度都会永久保留。我们承诺长期运营，让你安心投入到创造之中。</p>
-  </div>
-  <div class="why-item">
-    <h3>社区驱动</h3>
-    <p>玩家群体决定服务器更新方向，定期收集建议</p>
-  </div>
-  <div class="why-item">
-    <h3>跑路承诺</h3>
-    <p>我们承诺，即使服务器因不可抗因素关闭，你的所有建筑和进度也会永久保留，并提供存档下载渠道</p>
   </div>
 </div>
 
