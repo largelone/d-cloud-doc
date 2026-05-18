@@ -30,7 +30,7 @@
 查看个人垃圾桶的使用演示：
 
 <video controls width="100%">
-  <source src="https://dcld.api.zhrhello.top/website/wtc.mp4" type="video/mp4">
+  <source src="https://dcld.api.zhrhello.top/website/wtc-player.mp4" type="video/mp4">
   您的浏览器不支持视频播放
 </video>
 
