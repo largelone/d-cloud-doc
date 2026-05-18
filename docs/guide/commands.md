@@ -7,21 +7,8 @@
 | 命令 | 说明 | 示例 |
 |------|------|------|
 | `/regr <密码> <密码>` | 注册账号 | `/reg 114514 114514` |
-| `/ln <密码>` | 登录账号 | `/l 114514 114514` |
+| `/l <密码>` | 登录账号 | `/l 114514 114514` |
 | `/changepassword <旧密码> <新密码>` | 修改密码 | `/changepassword 114514 1919810` |
-
-## 领地相关
-
-| 命令 | 说明 | 示例 |
-|------|------|------|
-| `/res create <名称>` | 创建领地 | `/res create myhome` |
-| `/res expand <数量>` | 扩展领地边界 | `/res expand 20` |
-| `/res add <玩家>` | 添加信任玩家 | `/res add Steve` |
-| `/res remove <玩家>` | 移除信任玩家 | `/res remove Steve` |
-| `/res info` | 查看领地信息 | `/res info` |
-| `/res delete <名称>` | 删除领地 | `/res delete myhome` |
-| `/res tp <名称>` | 传送到领地 | `/res tp myhome` |
-| `/res list` | 查看我的领地列表 | `/res list` |
 
 ## 经济相关
 
@@ -29,7 +16,7 @@
 |------|------|------|
 | `/money` 或 `/balance` | 查看余额 | `/money` |
 | `/money pay <玩家> <金额>` | 转账给其他玩家 | `/money pay Steve 100` |
-| `/money top` | 财富排行榜 | `/money top` |
+| `/baltop` | 财富排行榜 | `/baltop` |
 | `/money shop` | 查看系统商店 | `/money shop` |
 
 ## 传送相关
@@ -37,8 +24,10 @@
 | 命令 | 说明 | 示例 |
 |------|------|------|
 | `/spawn` | 返回主广场 | `/spawn` |
-| `/home set <名称>` | 设置家 | `/home set base` |
+| `/home <名称>` | 设置家 | `/home base` |
 | `/home <名称>` | 传送到家 | `/home base` |
+| `/homes` | 查看家列表 | `/homes` |
+| `/homes rm <名称>` | 删除家 | `/homes rm base` |
 | `/tpa <玩家>` | 请求传送 | `/tpa Steve` |
 | `/tpaccept` | 接受传送 | `/tpaccept` |
 | `/tpdeny` | 拒绝传送 | `/tpdeny` |
@@ -56,10 +45,6 @@
 | 命令 | 说明 | 示例 |
 |------|------|------|
 | `/list` | 查看在线玩家 | `/list` |
-| `/vote` | 投票支持服务器 | `/vote` |
-| `/rules` | 查看服务器规则 | `/rules` |
-| `/help` | 查看帮助 | `/help` |
-| `/ping` | 查看延迟 | `/ping` |
 
 ## 提示
 
